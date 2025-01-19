@@ -40,7 +40,7 @@ export default function Accordian() {
                   {dataItem.answer}
                   <div>
                     <Link to={dataItem.links[0]}><button>View Demo</button></Link>{" "}
-                    <Link to={dataItem.links[1]}><button>Get Hint</button></Link>{" "}
+                    <Link to={`/hint/${dataItem.links[1]}`}><button>Get Hint</button></Link>{" "}
                     <Link to={dataItem.links[2]}><button>View Code</button></Link>{" "}
                   </div>
                 </div>

@@ -12,6 +12,8 @@ import Tabset from './components/CustomTabs/Tabset';
 import ModalTest from './components/ModalPopup/ModalTest';
 import RandomColor from './components/RandomColor/RandomColor';
 import AutoSearch from './components/SearchAutoComplete/AutoSearch';
+// import Steps from './lib/steps';
+import Hint from './components/Hint/Hint';
 
 function App() {
   console.log("app is rendered");
@@ -42,6 +44,7 @@ function App() {
         <Route path='/dynamic-modal' element={ authUser ? <ModalTest /> : <Navigate to={"/"} />} />
         <Route path='/random-color-generator' element={ authUser ? <RandomColor /> : <Navigate to={"/"} />} />
         <Route path='/search-autocomplete' element={ authUser ? <AutoSearch /> : <Navigate to={"/"} />} />
+        <Route path='/hint/:component' element={ authUser ? <Hint /> : <Navigate to={"/"} />} />
       </Routes>
     </Layout>
   );
